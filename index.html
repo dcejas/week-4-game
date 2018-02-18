@@ -7,11 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" /> -->
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css"/>
-
     <script src="assets/javascript/game.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
+
 <body>
-    <div>
+    <div class="container">
         <h1>Crystals Collector!</h1>
 
         <div id="Instructions">
@@ -23,25 +26,31 @@
             <h4>GOOD LUCK!!!</h4>
         </div>
 
-        <div id="generatedNumber">
-            Blank Computer Generated number
+        <div class="row">
+            <div class="col-md-6">
+                <div id="generatedNumber">
+                    Computer Generated number
+                </div>
+
+            <div class="col-md-6" id="score">
+                Wins & losses go here.
+            </div>
         </div>
 
-        <div id="score">
-            Blank - Wins & losses go here.
-        </div>
 
-        <div id="crystals">
-            <p>picture1</p>
-            <p>picture2</p>
-            <p>picture3</p>
-            <p>picture4</p>
-        </div>
+        <div class="row">
+            <div id="crystals">
+                <p>picture1</p>
+                <p>picture2</p>
+                <p>picture3</p>
+                <p>picture4</p>
+            </div>
 
-        <div id="crystalTally">
-            <p>Your total score is:</p>
-            <div id="crystalValue">
-                Crystal Value goes here.
+            <div id="crystalTally">
+                <p>Your total score is:</p>
+                <div id="crystalValue">
+                    Crystal Value goes here.
+                </div>
             </div>
         </div>
     </div>
