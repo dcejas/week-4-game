@@ -64,18 +64,40 @@ $( document ).ready(function(){
             else if ( userTotal > Random){
                 loser();
             }   
+    })
+    $('#emerald').on ('click', function(){
+        userTotal = userTotal + num2;
+        console.log("New userTotal= " + userTotal);
+        $('#crystalValue').text(userTotal); 
+            if (userTotal == Random){
+              yay();
+            }
+            else if ( userTotal > Random){
+              loser();
+            } 
+    })
+    $('#pearl').on ('click', function(){
+        userTotal = userTotal + num3;
+        console.log("New userTotal= " + userTotal);
+        $('#crystalValue').text(userTotal);
+            //sets win/lose conditions
+            if (userTotal == Random){
+              yay();
+            }
+            else if ( userTotal > Random){
+              loser();
+            } 
     })  
-
-
-    // $(".gems").on("click", function() {
-
-    //     // ... the gem generates a random number from 1-12
-    //     var gemRandom = Math.floor(Math.random() * 11) + 1;
-
-    //     // ... and then dumps the random number into our crystalValue div. 
-    //     $("#crystalValue").text(gemRandom);
-
-    //     var v = $(gemRandom).val();
-    //     var total = $('#crystalValue').val($('#crystalValue').val()+ v);
-    // });
+    $('#ruby').on ('click', function(){
+        userTotal = userTotal + num4;
+        console.log("New userTotal= " + userTotal);
+        $('#crystalValue').text(userTotal); 
+        
+        if (userTotal == Random){
+            yay();
+        }
+        else if ( userTotal > Random){
+            loser();
+        }
+    });   
 });
