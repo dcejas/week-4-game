@@ -53,7 +53,7 @@ $( document ).ready(function(){
         }
 
         //sets up click for jewels
-    $('#diamond').on ('click', function(){
+    $('#silverGem').on ('click', function(){
         userTotal = userTotal + num1;
         console.log("New userTotal= " + userTotal);
         $('#crystalValue').text(userTotal); 
@@ -65,7 +65,7 @@ $( document ).ready(function(){
                 loser();
             }   
     })
-    $('#emerald').on ('click', function(){
+    $('#greenGem').on ('click', function(){
         userTotal = userTotal + num2;
         console.log("New userTotal= " + userTotal);
         $('#crystalValue').text(userTotal); 
@@ -76,7 +76,7 @@ $( document ).ready(function(){
               loser();
             } 
     })
-    $('#pearl').on ('click', function(){
+    $('#redGem').on ('click', function(){
         userTotal = userTotal + num3;
         console.log("New userTotal= " + userTotal);
         $('#crystalValue').text(userTotal);
@@ -88,7 +88,7 @@ $( document ).ready(function(){
               loser();
             } 
     })  
-    $('#ruby').on ('click', function(){
+    $('#blueGem').on ('click', function(){
         userTotal = userTotal + num4;
         console.log("New userTotal= " + userTotal);
         $('#crystalValue').text(userTotal); 
