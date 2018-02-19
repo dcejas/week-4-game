@@ -1,30 +1,23 @@
-//Random Computer Generated Number
-function generateComputerRandom() {
-    var randomNumber = document.getElementById("computerNumber")
-    randomNumber.innerHTML = Math.floor((Math.random() * 101) + 19);
-}
-    window.onload = generateComputerRandom;
+$( document ).ready(function(){
+    var Random=Math.floor(Math.random()*101+19)
+    // Selects a random number to be shown at the start of the game
+    // Number should be should be between 19 - 120
+    //
+    $('#computerNumber').text(Random);
+    // Appending random number to the randomNumber id in the html doc
+    //
 
 
-
-
-// $( document ).ready(funtion() {
-
-//     function generateCGemRandom() {
-//         var randomGemNumber = document.getElementById("computerNumber")
-//         randomGemNumber.innerHTML = Math.floor((Math.random() * 101) + 19);
-//     }
-// });
-
-$(document).ready(function() {
-
-    // When random-button is clicked...
+    // When gem is clicked...
     $(".gems").on("click", function() {
 
-        // ... we generate a random number
+        // ... the gem generates a random number from 1-12
         var gemRandom = Math.floor(Math.random() * 11) + 1;
 
-        // ... and then dump the random number into our random-number div. 
+        // ... and then dumps the random number into our crystalValue div. 
         $("#crystalValue").text(gemRandom);
+
+        var v = $(gemRandom).val();
+        var total = $('#crystalValue').val($('#crystalValue').val()+ v);
     });
 });
