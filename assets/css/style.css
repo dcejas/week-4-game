@@ -3,7 +3,7 @@ body {
 }
 
 div {
-    background: white;
+    /* background: white; */
     margin-top: 20px;
 }
 
@@ -15,13 +15,15 @@ div {
     font-family: 'Cinzel', serif;
 }
 
-.gemBackground {
-    background:rgba(255,255,255, 0.8);
+#instructions {
+    font-size: 10px;
 }
-/* .row.thumbnail {
-    background: white;
-} */
-#silverGem, #greenGem, #redGem, #blueGem {
-    height: 100px;
+
+.gems {
+    padding-bottom: 25px;
+}
+
+#purpleGem, #greenGem, #redGem, #blueGem {
+    height: 120px;
     width: 100px;
 }
