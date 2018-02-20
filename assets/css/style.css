@@ -7,13 +7,20 @@ div {
     margin-top: 20px;
 }
 
-#pageHeader {
+.page-header, .jumbotron, .gems {
     padding-top: 5px;
-    opacity: .55;
+    /* opacity: .55; */
+    background:rgba(255,255,255, 0.5);
     color: black;
     font-family: 'Cinzel', serif;
 }
 
+.gemBackground {
+    background:rgba(255,255,255, 0.8);
+}
+/* .row.thumbnail {
+    background: white;
+} */
 #silverGem, #greenGem, #redGem, #blueGem {
     height: 100px;
     width: 100px;
