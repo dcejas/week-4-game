@@ -1,3 +1,5 @@
+// Crystals are not working for some reason
+
 $( document ).ready(function(){
     var Random=Math.floor(Math.random()*101+19)
     // Selects a random number to be shown at the start of the game
