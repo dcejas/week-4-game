@@ -7,7 +7,7 @@ div {
     margin-top: 20px;
 }
 
-.page-header, .jumbotron, .gems {
+.page-header, .jumbotron, .gems, #pageFooter {
     padding-top: 5px;
     /* opacity: .55; */
     background:rgba(255,255,255, 0.5);
@@ -15,8 +15,8 @@ div {
     font-family: 'Cinzel', serif;
 }
 
-#instructions {
-    font-size: 10px;
+.jumbotron {
+    font-family: 'Chango', cursive;
 }
 
 .gems {
@@ -24,7 +24,28 @@ div {
 }
 
 #purpleGem, #greenGem, #redGem, #blueGem {
-    height: 120px;
-    width: 100px;
+    height: 100px;
+    width: 80px;
 }
 
+#numberWins {
+    padding-right: 30px;
+}
+
+#numberLosses {
+    padding-left: 30px;
+}
+
+.bigNumber {
+    font-size: xx-large;
+}
+
+.container {
+    background:rgba(255,255,255, 0.5);
+    color: black;
+}
+
+#pageFooter {
+    margin-top: 0;
+    font-family: 'Rubik Mono One', sans-serif;
+}

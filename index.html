@@ -9,15 +9,19 @@
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <!-- My Stylesheet -->
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css"/>
     
+    <!--GOOGLE FONT-->
+    <link href="https://fonts.googleapis.com/css?family=Chango|Cinzel|Kavivanar|Rubik+Mono+One|Syncopate" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
-    
+    <!--JAVASCRIPT-->
     <script src="assets/javascript/game.js"></script>
 
 
@@ -27,24 +31,34 @@
 
 <!-- HEADER -->
     <div class="page-header text-center" id="pageHeader">
-        <h1><strong>Crystals Collector</strong></h1>
+        <h1 style="font-size: 50px"><strong>Crystals Collector</strong></h1>
     </div>
 
 <!-- JUMBOTRON -->
     <div class="jumbotron">
        <div class="row">
-           <div class="col-md-6 text-center">
-                <p style="font-size: 50px" id="numberWins"></p>
-                <p style="font-size: 50px" id="numberLosses"></p>
-           </div>
-           <div class="col-md-6 text-center">
-                <p style="font-size: 50px" id="numberWins"></p>
-                <p style="font-size: 50px" id="numberLosses"></p>
+           <div class="col-md-4 text-justify">
+                <h3>INSTRUCTIONS</h3>   
+                <p>1) Click on the Crytals!</p>
+                <p>2) Determine their value!</p>
+                <p>3) Match the number shown!</p>
+                <h3>GOOD LUCK!!!</h3>
            </div>
 
+        
+        <!--COMPUTER NUMBER-->
+            <div class="col-md-4 text-center">
+                <h2 style="font-size: 30px; font-family: 'Chango', cursive;">Can you match this number?</h2>
+                <h1 class="bigNumber" id="computerNumber" style="font-size:100px; font-family: 'Rubik Mono One', sans-serif;"></h3>
+            </div>   
+
+        <!--CRYSTAL TALLY-->
+            <div class="col-md-4 text-center">
+                <h2 style="font-size: 30px">Let's see!</h2>
+                <h1 class="bigNumber" id="crystalValue" style="font-size:100px;"></h1>
+            </div>
        </div>
 
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
     </div>
 
 <!-- GEMS -->
@@ -63,43 +77,13 @@
         </div>
     </div>
 
-    <div class="container">
-
-        <div id="Instructions">
-            <p>You will be given a random number at the start of the game. </p>
-            <p>There are four crystals below. By clicking on a crystal you will ad a specific amount of points to your toal score. </p>
-            <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
-            <p>The value of each crystal is hidden fro you until you click on it.</p>
-            <p>Each time when the game starts, the game will change the values of each crystal</p>
-            <h4>GOOD LUCK!!!</h4>
+    <!--WINS & LOSSES-->
+    <div class="row" id="pageFooter">
+        <div class="col-md-6 text-right">
+            <p style="font-size: 50px" id="numberWins"></p>
         </div>
-
-        <div class="row">
-            <div class="col-md-6">
-                <div>
-                    <h4 class="text-center">Computer Generated number</h4>
-                    <h3 class="text-center" id="computerNumber"></h3>
-                </div>
-
-            <div class="col-md-6" id="score">
-                <p id="numberWins">"Wins" +</p>
-                <p id="numberLosses">"Losses" +</p>
-
-            </div>
-        </div>
-
-        <div class="row">
-            <div id="crystals">
-                <img id="purpleGem" src="assets/images/purpleGem.png" alt="Purple Gem">
-                <img id="greenGem" src="assets/images/greenGem.png" alt="Green Gem">
-                <img id="redGem" src="assets/images/redGem.png" alt="Red Gem">
-                <img id="blueGem" src="assets/images/blueGem.png" alt="Blue Gem">
-            </div>
-
-            <div id="crystalTally">
-                <p>Your total score is:</p>
-                <div id="crystalValue"></div>
-            </div>
+        <div class="col-md-6 text-left">
+            <p style="font-size: 50px" id="numberLosses"></p>
         </div>
     </div>
 </body>
